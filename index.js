@@ -6,7 +6,7 @@
  * This file caches all the remotes locally based on a hash of their path.
  */
 
-var debug = require('debug')('fuisz-tracker:download');
+var debug = require('debug')('download-cache');
 var Promise = require('native-or-bluebird');
 var request = require('requisition');
 var validator = require('validator');
