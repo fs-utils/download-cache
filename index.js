@@ -17,6 +17,8 @@ var crypto = require('crypto');
 
 var cache = download.cache = Cache('download-cache');
 
+var progress = Object.create(null);
+
 module.exports = download;
 
 /**
@@ -27,8 +29,10 @@ module.exports = download;
 
 function download(url) {
   if (!validator.isURL(url)) return Promise.reject(error(400, 'Invalid URL: ' + url));
+  // download in progress
+  if (progress[sha]) return progress[sha];
   var sha = hash(url);
-  return cache.access(sha).then(function (filename) {
+  return progress[sha] = cache.access(sha).then(function (filename) {
     if (filename) return filename;
 
     return request(url)
@@ -42,6 +46,12 @@ function download(url) {
 
       return cache.copy(sha, response.response);
     });
+  }).then(function (filename) {
+    delete progress[sha];
+    return filename;
+  }, function (err) {
+    delete progress[sha];
+    throw err;
   });
 }
 

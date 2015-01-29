@@ -6,7 +6,6 @@
   "license": "MIT",
   "repository": "fs-utils/download-cache",
   "dependencies": {
-    "bluebird": "^2.9.3",
     "debug": "^2.1.1",
     "fs-lru-cache": "^1.0.2",
     "http-assert": "^1.1.0",
