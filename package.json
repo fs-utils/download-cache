@@ -7,7 +7,7 @@
   "repository": "fs-utils/download-cache",
   "dependencies": {
     "debug": "^2.1.1",
-    "fs-lru-cache": "^1.0.2",
+    "fs-lru-cache": "^2.1.2",
     "http-assert": "^1.1.0",
     "http-errors": "^1.2.8",
     "native-or-bluebird": "^1.1.2",

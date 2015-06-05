@@ -49,7 +49,7 @@ function download(url) {
   }).then(function (filename) {
     delete progress[sha];
     return filename;
-  }, function (err) {
+  }, /* istanbul ignore next */ function (err) {
     delete progress[sha];
     throw err;
   });
