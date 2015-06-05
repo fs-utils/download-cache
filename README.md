@@ -7,7 +7,6 @@
 [![Dependency Status][david-image]][david-url]
 [![License][license-image]][license-url]
 [![Downloads][downloads-image]][downloads-url]
-[![Gittip][gittip-image]][gittip-url]
 
 ```js
 var download = require('download-cache');
@@ -33,5 +32,3 @@ download('https://archive.org/download/Windows7WildlifeSampleVideo/Wildlife_512k
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/download-cache.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/download-cache
-[gittip-image]: https://img.shields.io/gratipay/jonathanong.svg?style=flat-square
-[gittip-url]: https://gratipay.com/jonathanong/
