@@ -10,7 +10,7 @@
     "fs-lru-cache": "^2.1.2",
     "http-assert": "^1.1.0",
     "http-errors": "^1.2.8",
-    "native-or-bluebird": "^1.1.2",
+    "native-or-bluebird": "^1.2.0",
     "requisition": "^1.5.0",
     "validator": "^3.28.0"
   },
