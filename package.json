@@ -12,7 +12,7 @@
     "http-errors": "^1.2.8",
     "native-or-bluebird": "^1.1.2",
     "requisition": "^1.5.0",
-    "validator": "^3.28.0"
+    "validator": "^4.5.1"
   },
   "devDependencies": {
     "bluebird": "^2.9.3",
